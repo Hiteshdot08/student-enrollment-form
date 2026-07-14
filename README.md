@@ -7,7 +7,6 @@
 - [Benefits of using JsonPowerDB](#benefits-of-using-jsonpowerdb)
 - [Scope of Functionalities](#scope-of-functionalities)
 - [Examples of Use](#examples-of-use)
-- [Illustrations](#illustrations)
 - [Project Status](#project-status)
 - [Release History](#release-history)
 - [Sources](#sources)
@@ -96,31 +95,6 @@ The project provides the following functionalities:
 
 ### Reset Form
 Click **Reset** to clear the form and return it to its initial state.
-
----
-
-## Illustrations
-
-Add screenshots of your project here after uploading them to GitHub.
-
-Example:
-
-```
-screenshots/
-│── form.png
-│── save.png
-│── update.png
-```
-
-Then include them like this:
-
-```md
-![Home](screenshots/form.png)
-
-![Save Record](screenshots/save.png)
-
-![Update Record](screenshots/update.png)
-```
 
 ---
 
