@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Enrollment Form</title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet"
+          href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="container">
+
+    <div class="page-header text-center">
+        <h2>Student Enrollment Form</h2>
+        <p class="text-muted">SCHOOL-DB / STUDENT-TABLE</p>
+    </div>
+
+    <form id="studentForm">
+
+        <!-- Roll Number -->
+        <div class="form-group">
+            <label for="rollNo" class="required">Roll No:</label>
+            <input
+                type="text"
+                id="rollNo"
+                class="form-control"
+                placeholder="Enter Roll Number"
+                required
+            >
+            <small class="text-muted">
+                Enter Roll Number and press Enter or Tab
+            </small>
+        </div>
+
+        <!-- Full Name -->
+        <div class="form-group">
+            <label for="fullName" class="required">Full Name:</label>
+            <input
+                type="text"
+                id="fullName"
+                class="form-control"
+                placeholder="Enter Full Name"
+                disabled
+            >
+        </div>
+
+        <!-- Class -->
+        <div class="form-group">
+            <label for="class" class="required">Class:</label>
+            <input
+                type="text"
+                id="class"
+                class="form-control"
+                placeholder="Enter Class"
+                disabled
+            >
+        </div>
+
+        <!-- Birth Date -->
+        <div class="form-group">
+            <label for="birthDate" class="required">Birth Date:</label>
+            <input
+                type="date"
+                id="birthDate"
+                class="form-control"
+                disabled
+            >
+        </div>
+
+        <!-- Address -->
+        <div class="form-group">
+            <label for="address" class="required">Address:</label>
+            <textarea
+                id="address"
+                class="form-control"
+                rows="3"
+                placeholder="Enter Address"
+                disabled></textarea>
+        </div>
+
+        <!-- Enrollment Date -->
+        <div class="form-group">
+            <label for="enrollmentDate" class="required">
+                Enrollment Date:
+            </label>
+
+            <input
+                type="date"
+                id="enrollmentDate"
+                class="form-control"
+                disabled
+            >
+        </div>
+
+        <!-- Buttons -->
+        <div class="form-group text-center btn-group">
+
+            <button
+                type="button"
+                id="saveBtn"
+                class="btn btn-primary"
+                onclick="saveData()"
+                disabled>
+                Save
+            </button>
+
+            <button
+                type="button"
+                id="updateBtn"
+                class="btn btn-warning"
+                onclick="changeData()"
+                disabled>
+                Update
+            </button>
+
+            <button
+                type="button"
+                id="resetBtn"
+                class="btn btn-danger"
+                onclick="resetForm()"
+                disabled>
+                Reset
+            </button>
+
+        </div>
+
+    </form>
+
+    <!-- Response Message -->
+    <div id="responseMsg" style="margin-top:20px;"></div>
+
+</div>
+
+<!-- jQuery -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<!-- Bootstrap -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+<!-- JsonPowerDB Library -->
+<script src="https://login2explore.com/jpdb/resources/js/jpdb-commons.js"></script>
+
+<!-- Your JavaScript -->
+<script src="script.js"></script>
+
+</body>
+</html>
